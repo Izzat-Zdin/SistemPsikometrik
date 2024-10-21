@@ -1,0 +1,134 @@
+/* Box */
+.box-l {
+  width: 100%;
+  margin: 20px auto;
+  background-color: #130404;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  border: 1px solid white;
+}
+.box-l table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+.box-l th,
+.box-l td {
+  padding: 7px;
+  border-bottom: 15px solid #000000;
+}
+.box-l th {
+  text-align: left;
+  font-size: 18px;
+  color: #ffffff;
+}
+.box-l tr {
+  border-bottom: 15px solid #000000;
+}
+.f-1,
+.f-2,
+.f-3 {
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Button Delete & Edit */
+.button-delete {
+  font-family: monospace;
+  background-color: white;
+  color: red;
+  border: none;
+  border-radius: 8px;
+  width: 45px;
+  height: 35px;
+  transition: 0.3s;
+}
+.button-delete:hover {
+  background-color: red;
+  box-shadow: 0 0 0 3px #0000005f;
+  color: #fff;
+}
+.button-edit {
+  font-family: monospace;
+  background-color: white;
+  color: green;
+  border: none;
+  border-radius: 8px;
+  width: 45px;
+  height: 35px;
+  transition: 0.3s;
+}
+.button-edit:hover {
+  background-color: green;
+  box-shadow: 0 0 0 3px #0000005f;
+  color: #fff;
+}
+
+/* Button Tambah Soalan */
+.button-plus-soalan {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: rgb(35, 35, 238);
+}
+.button-plus-soalan,
+.button-plus-soalan span {
+  transition: 200ms;
+}
+.button-plus-soalan .text {
+  transform: translateX(20px);
+  color: white;
+  font-weight: bold;
+}
+.button-plus-soalan .icon {
+  position: absolute;
+  border-left: 1px solid white;
+  transform: translateX(160px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-plus-soalan svg {
+  width: 15px;
+  fill: #eee;
+}
+.button-plus-soalan:hover {
+  background: rgb(35, 35, 238);
+}
+.button-plus-soalan:hover .text {
+  color: transparent;
+}
+.button-plus-soalan:hover .icon {
+  width: 200px;
+  border-left: none;
+  transform: translateX(0);
+}
+.button-plus-soalan:focus {
+  outline: none;
+}
+.button-plus-soalan:active .icon svg {
+  transform: scale(0.8);
+}
+
+.yes-button {
+  position: absolute; /* Allows precise positioning */
+  right: 20px; /* 10px from the right of the nearest relatively positioned container */
+}
+.kotak-putih {
+  height: 190px;
+}
+.label-kelas {
+  display: block;
+  color: black; /* Ensure label fonts are all black */
+  margin-bottom: 5px;
+}

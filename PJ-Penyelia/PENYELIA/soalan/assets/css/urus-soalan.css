@@ -1,0 +1,233 @@
+/* Base styles for body and text */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Styling the table for dark mode */
+table.dark-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #333333;
+  color: #ffffff;
+}
+
+table.dark-table th,
+table.dark-table td {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #444444;
+}
+
+table.dark-table th {
+  background: #444444;
+}
+
+/* Button styles */
+button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Container styling */
+.container-urus {
+  position: absolute;
+  top: 35%;
+  width: 60%;
+  margin: 20px auto;
+  background: #2e2e2e;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button-plus styles */
+.button-plus {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #750e21;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  position: relative; /* Ensure the icon and text positioning is relative to this button */
+}
+
+.button-plus,
+.button-plus span {
+  transition: 200ms;
+}
+
+.button-plus .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+  gap: 1%;
+}
+
+.button-plus .icon {
+  position: absolute;
+  border-left: 1px solid white;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-plus svg {
+  width: 15px;
+  fill: #eee;
+}
+
+.button-plus:hover {
+  background: #750e21;
+}
+
+.button-plus:hover .text {
+  color: transparent;
+}
+
+.button-plus:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.button-plus:focus {
+  outline: none;
+}
+
+.button-plus:active .icon svg {
+  transform: scale(0.8);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.question-set {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #2e2e2e;
+  color: #fff;
+}
+
+.w3-modal-content {
+  background: #333;
+  color: #000;
+}
+
+.w3-input,
+.w3-lbl,
+.w3-lbl b {
+  color: #000 !important;
+}
+
+/* Custom select styles for dark mode */
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  appearance: none; /* Remove default arrow */
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Adding a custom arrow icon for the select */
+select::after {
+  content: "\25BC"; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent the icon from capturing mouse events */
+  color: #ffffff;
+}
+
+/* Enhancing the style of the options dropdown */
+select option {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+/* Styling for the focused select element */
+select:focus {
+  border: 2px solid #555555; /* Add a border to indicate focus */
+  outline: none; /* Remove default outline */
+  background-color: #444444; /* Slightly lighten background */
+}
+
+/* Hover effect on options */
+select option:hover {
+  background-color: #444444;
+}
+
+/* Active and selected states for options */
+select option:checked,
+select option:selected {
+  background-color: #555555;
+}
+
+/* Additional styling for the dropdown list */
+select::-ms-expand {
+  display: none; /* Remove the default dropdown arrow on IE */
+}
+/* ---Button Delete & Edit--- */
+.button-delete {
+  font-family: monospace;
+  background-color: #333333;
+  color: red;
+  border: none;
+  border-radius: 8px;
+  width: 49px;
+  height: 42px;
+  transition: 0.3s;
+}
+.button-delete:hover {
+  background-color: red;
+  box-shadow: 0 0 0 3px #0000005f;
+  color: #fff;
+}
+.button-edit {
+  font-family: monospace;
+  background-color: #333333;
+  color: green;
+  border: none;
+  border-radius: 8px;
+  width: 49px;
+  height: 42px;
+  transition: 0.3s;
+}
+.button-edit:hover {
+  background-color: green;
+  box-shadow: 0 0 0 3px #0000005f;
+  color: #fff;
+}

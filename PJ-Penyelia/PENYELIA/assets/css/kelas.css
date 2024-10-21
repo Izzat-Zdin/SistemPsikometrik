@@ -1,0 +1,254 @@
+/* ---Kotak--- */
+.box-l {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  background-color: #151515;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+.box-l table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.box-l th,
+.box-l td {
+  padding: 7px;
+  border-bottom: 15px solid #151515;
+}
+
+.box-l th {
+  /*Header table*/
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  background-color: #151515;
+}
+.box-l tr {
+  background-color: white; /* Ensure all rows have a white background */
+  border-bottom: 15px solid #000000; /* Black line between each table row */
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* ---Rows--- */
+.f-1,
+.f-2,
+.f-3 {
+  color: #000000;
+}
+.form-kelass {
+  margin-bottom: 100px;
+}
+
+/* ---Tulisan Dalam--- */
+label {
+  display: block;
+  color: black; /* Ensure label fonts are all black */
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.title-kelas {
+  font-size: 42px; /* Change the font size to your desired size */
+}
+
+/* ---Button Delete & Edit--- */
+.button-delete {
+  font-family: monospace;
+  background-color: white;
+  color: red;
+  border: none;
+  border-radius: 8px;
+  width: 45px;
+  height: 35px;
+  transition: 0.3s;
+}
+.button-delete:hover {
+  background-color: red;
+  box-shadow: 0 0 0 3px #0000005f;
+  color: #fff;
+}
+.button-edit {
+  font-family: monospace;
+  background-color: white;
+  color: green;
+  border: none;
+  border-radius: 8px;
+  width: 45px;
+  height: 35px;
+  transition: 0.3s;
+}
+.button-edit:hover {
+  background-color: green;
+  box-shadow: 0 0 0 3px #0000005f;
+  color: #fff;
+}
+
+/* ---Button Tambah--- */
+.button-plus {
+  position: absolute;
+  top: 22%;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #750e21;
+}
+.button-plus,
+.button-plus span {
+  transition: 200ms;
+}
+.button-plus .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+.button-plus .icon {
+  position: absolute;
+  border-left: 1px solid white;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-plus svg {
+  width: 15px;
+  fill: #eee;
+}
+.button-plus:hover {
+  background: #750e21;
+}
+.button-plus:hover .text {
+  color: transparent;
+}
+.button-plus:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+.button-plus:focus {
+  outline: none;
+}
+.button-plus:active .icon svg {
+  transform: scale(0.8);
+}
+
+/* Danger Icon */
+.danger-pic {
+  width: 10%; /* Adjust width as needed */
+  display: block;
+  height: 50%;
+  margin: 50px auto 0; /* Center horizontally and add top margin */
+}
+.danger-lbl {
+  text-align: center;
+  font-size: larger;
+  margin-bottom: 10px;
+}
+.danger-form {
+  padding: 10px;
+}
+.button-container {
+  text-align: right;
+  padding: 10px;
+  margin-right: -2%;
+  margin-bottom: -2%;
+}
+
+/* ---Button Tambah Soalan--- */
+.button-plus-soalan {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: rgb(35, 35, 238);
+}
+.button-plus-soalan,
+.button-plus-soalan span {
+  transition: 200ms;
+}
+.button-plus-soalan .text {
+  transform: translateX(20px);
+  color: white;
+  font-weight: bold;
+}
+.button-plus-soalan .icon {
+  position: absolute;
+  border-left: 1px solid white;
+  transform: translateX(160px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-plus-soalan svg {
+  width: 15px;
+  fill: #eee;
+}
+.button-plus-soalan:hover {
+  background: rgb(35, 35, 238);
+}
+.button-plus-soalan:hover .text {
+  color: transparent;
+}
+.button-plus-soalan:hover .icon {
+  width: 200px;
+  border-left: none;
+  transform: translateX(0);
+}
+.button-plus-soalan:focus {
+  outline: none;
+}
+.button-plus-soalan:active .icon svg {
+  transform: scale(0.8);
+}
+.tambah {
+  font-size: large;
+}
+.lbl-kelas {
+  font-size: 20px;
+}
+.w3-input {
+  font-weight: 500;
+  color: #000;
+}
+.w3-lbl {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.w1-lbl {
+  font-size: 20px;
+}

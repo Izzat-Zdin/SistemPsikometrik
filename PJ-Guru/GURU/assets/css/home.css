@@ -1,0 +1,67 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1 1 calc(50% - 20px); /* Half of container width minus gap */
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 2em;
+  margin: 10px 0 0;
+  color: #27ae60;
+}
+
+.bg-image {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .dashboard,
+  .map-container {
+    flex: 1 1 100%;
+  }
+}
+
+.map {
+  width: 200%; /* Make sure the map fills its container */
+  height: 100%; /* Make sure the map fills its container */
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

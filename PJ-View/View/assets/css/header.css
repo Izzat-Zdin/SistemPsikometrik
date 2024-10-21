@@ -1,0 +1,20 @@
+body {
+  background: black;
+}
+
+.clock {
+  position: relative;
+  top: 30%;
+  left: 49%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #17d4fe;
+  font-size: 27px;
+  font-weight: 800;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: aliceblue;
+}
+.header-logo {
+  position: relative;
+  font-size: 50%;
+}

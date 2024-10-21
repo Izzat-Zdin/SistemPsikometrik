@@ -1,0 +1,164 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures body takes full height */
+  overflow-y: scroll; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+}
+
+html {
+  height: 100%; /* Ensures html takes full height */
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+}
+
+.bg-image {
+  display: none;
+}
+
+.main {
+  padding: 20px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.quiz-container {
+  background: #1f1f1f;
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 20%;
+  left: 50%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.question-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.question-number {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.quiz-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.question-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.question-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.question-text {
+  flex: 2;
+}
+
+.question-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  background: #333333;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.choice:hover {
+  background: #444444;
+}
+
+/* Additional murid class styles */
+.murid {
+  font-family: "Roboto", sans-serif;
+}
+.choice.selected {
+  background: #0066cc;
+  color: #ffffff;
+}
+
+/* Stylish Scrollbar */
+::-webkit-scrollbar {
+  width: 20px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f1f; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners of the track */
+  padding-top: 40%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the thumb */
+  border: 3px solid #1f1f1f; /* Adds space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: white; /* Active color for the scrollbar thumb */
+}
+
+/* Submit button styles */
+.submit-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background: #0066cc;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background: #005bb5;
+}
+.tajuk-soalan {
+  font-size: 40px;
+  font-weight: bolder;
+  position: absolute;
+  top: 15%;
+  left: 22%;
+}
+.question-container murid {
+  position: relative;
+  left: 50%;
+}
+.move-left {
+  transform: translateX(-50%);
+}

@@ -1,0 +1,73 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-container-murid {
+  position: absolute;
+  top: 16%;
+  left: 6%;
+  width: 60%;
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.card-murid {
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 25%;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.card-murid:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-murid img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.card-body-murid {
+  padding: 1rem;
+}
+
+.card-title-murid {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text-murid {
+  font-size: 1rem;
+  color: #b3b3b3;
+}
+
+.badge-murid {
+  background-color: #28912b;
+  color: white;
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.main-murid {
+  padding: 2rem;
+}
+
+.badge-murid {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}

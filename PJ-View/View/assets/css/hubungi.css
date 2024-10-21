@@ -1,0 +1,34 @@
+/* Dark mode styling for hubungi.php */
+body {
+  background-color: #121212;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+
+.main.container {
+  padding: 20px;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+  border: none;
+}
